@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springboot.pilotproject.dao.productDAO">
+	<select id="productList" resultType="com.springboot.pilotproject.dto.productDTO">
+		select * from product order by pno desc
+	</select>
+	<select id="productView" resultType="com.springboot.pilotproject.dto.productDTO">
+		select * from product where pno = #{pno}
+	</select>
+	<insert id="productWrite">
+		insert into product(pno, pcategory, pname, pfilename, pprice, pdescription, porigin, pweight, pstorage, pstock, pdate, mno)
+		 values(product_seq.NEXTVAL, #{pcategory}, #{pname}, #{pfilename}, #{pprice}, #{pdescription}, #{porigin}, #{pweight}, #{pstorage}, #{pstock}, SYSDATE, #{mno})
+	</insert>
+	<update id="productUpdate">
+		update product
+		 set pcategory = #{pcategory}, pname = #{pname}, pfilename = #{pfilename}, pprice = #{pprice}, pdescription = #{pdescription}, porigin = #{porigin}, pweight = #{pweight}, pstorage = #{pstorage}, pstock = #{pstock}
+		 where pno = #{pno}
+	</update>
+	<delete id="productDelete">
+		delete from product
+		 where pno = #{pno}
+	</delete>
+</mapper>

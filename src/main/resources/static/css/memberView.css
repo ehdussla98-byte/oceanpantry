@@ -1,0 +1,82 @@
+@charset "UTF-8";
+.admin-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.admin-container h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #111;
+    border-left: 4px solid #555;
+    padding-left: 10px;
+}
+
+.admin-detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.admin-detail-table tr th {
+    width: 25%;
+    padding: 16px 20px;
+    background-color: #fcfcfc;   
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+    text-align: left;          
+}
+
+.admin-detail-table tr td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: 14px;
+    color: #333333;
+    text-align: left;
+}
+
+.highlight-id {
+    font-weight: bold;
+    color: #111111;
+}
+
+.auth-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #e9ecef;
+    color: #495057;
+    border-radius: 4px;
+}
+
+.action-group {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #555555;  
+    color: #ffffff !important;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-back:hover {
+    background-color: #000000; 
+    text-decoration: none;
+}
