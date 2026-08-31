@@ -22,5 +22,8 @@
 ### 상품 상세 정보 확인
 <img width="667" height="494" alt="image" src="https://github.com/user-attachments/assets/4980fa88-c684-4a8e-b2f7-312bb028bffa" />
 
+### 상품 등록
+<img width="304" height="512" alt="image" src="https://github.com/user-attachments/assets/8d5c7be0-a3fd-44bf-8f19-add84b51265a" />
+
 ## 개발 기간
 2026.06.22 ~ 2026.06.29
